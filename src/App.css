@@ -1,0 +1,155 @@
+body {
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.header {
+  background: #007bff;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.language-switcher button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #6c757d;
+  color: white;
+  transition: background 0.3s;
+}
+
+.language-switcher button:hover {
+  background: #5a6268;
+}
+
+.language-switcher .active {
+  background: #343a40;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-group select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.case-button, .special-button, .undo-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.case-button {
+  background: #28a745;
+  color: white;
+}
+
+.case-button:hover {
+  background: #218838;
+}
+
+.special-button {
+  background: #dc3545;
+  color: white;
+}
+
+.special-button:hover {
+  background: #c82333;
+}
+
+.undo-button {
+  background: #007bff;
+  color: white;
+}
+
+.undo-button:hover {
+  background: #0056b3;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.key, .special-key {
+  margin: 5px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  transition: background 0.3s;
+}
+
+.key:hover, .special-key:hover {
+  background: #0056b3;
+}
+
+.special-key {
+  background: #dc3545;
+}
+
+.special-key:hover {
+  background: #c82333;
+}
+
+.text-area-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.text-area {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: #f8f9fa;
+  min-height: 200px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
